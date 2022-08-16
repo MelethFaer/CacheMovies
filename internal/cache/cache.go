@@ -24,7 +24,7 @@ func (c *CachedMovies) StartCaching() {
 
 		for {
 			select {
-			// Актуализировать перечнь фильмов
+			// Актуализировать перечень фильмов
 			case <-timer.C:
 				movies := movie.GetPopularMovies()
 
